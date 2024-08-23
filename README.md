@@ -7,7 +7,9 @@ E-commerce platforms like Amazon and Flipkart utilize advanced recommendation mo
 
 ● Rating : Rating of the corresponding product by the corresponding user(Third Column)
                        
-● timestamp : Time of the rating ( Fourth Column)                                             
+● timestamp : Time of the rating ( Fourth Column)     
+
+dataset link = https://www.kaggle.com/datasets/saurav9786/amazon-product-reviews
                                    
 ## Libraries
 ```
