@@ -1,6 +1,14 @@
 # Recommendation_Amazon_Products
 E-commerce platforms like Amazon and Flipkart utilize advanced recommendation models to offer personalized product suggestions to their users. Amazon, for instance, uses item-to-item collaborative filtering, a technique designed to manage vast amounts of data while providing real-time, accurate recommendations. This approach works by comparing items a user has interacted with—whether through purchases or ratings—with similar items, and then curating a customized list of recommendations. In this project, our goal is to develop a recommendation system specifically for Amazon's electronics products.
 
+● userId : Every user identified with a unique id (First Column)            
+
+● productId : Every product identified with a unique id(Second Column)                  
+
+● Rating : Rating of the corresponding product by the corresponding user(Third Column)
+                       
+● timestamp : Time of the rating ( Fourth Column)                                             
+                                   
 ## Libraries
 ```
 import pandas as pd
@@ -19,12 +27,7 @@ from surprise.model_selection import train_test_split, cross_validate
 We import the data set and gave the columns names
 ```
 data = pd.read_csv("C:/Users/kaanc/Python_tenserflow/ratings_Electronics.csv",names=['userId', 'productId','Rating','timestamp'])
-```
-
-userId: A unique identifier assigned to each user.                   
-productId: A unique identifier assigned to each product.                      
-Rating: The rating given by the user to the product (on a scale of 1 to 5).                   
-timestamp: The time when the rating was given, in Unix timestamp format.              
+```           
 
 ```
 data.head(10)
